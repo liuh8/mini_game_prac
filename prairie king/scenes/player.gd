@@ -12,6 +12,9 @@ signal shoot
 
 func _ready():
 	screen_size = get_viewport_rect().size
+	reset()
+	
+func reset():
 	position = screen_size / 2
 	speed = START_SPEED
 	$ShotTimer.wait_time = NORMAL_SHOT
